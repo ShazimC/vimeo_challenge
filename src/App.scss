@@ -225,6 +225,48 @@ body{
   .card_text{
     // border: 1px solid white;
     position: relative;
-    font-size: 10px;
+    font-size: 13px;
+  }
+  .card_picture{
+    
+    max-width: 150px;
+  }
+  .card_text{
+    padding: 0px 3%;
+  }
+  #Carousel_BG{
+    height: 100%;
+  }
+  #Carousel_Wrapper{
+    height: 500px;
+  }
+  .cardLinks{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 200px;
+  }
+  .BuyNow{
+    margin-top: -20px;
+    max-width: 130px;
+    padding: 11% 18%;
+  }
+  .WatchTrailer{
+    text-align: center;
+    max-width: 130px;
+    padding: 5%;
+  }
+  .nextButton{
+    left: 89%;
+  }
+  .prevButton{
+    left: -1%;
   }
 }
