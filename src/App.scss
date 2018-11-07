@@ -1,0 +1,230 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  overflow-x: hidden;
+}
+
+.section{
+  display: flex;
+  align-items: center;
+  padding-top:7%;
+  padding-bottom:7%;
+  padding-left:15%;
+  padding-right: 17%;
+}
+
+.section#top{
+  background-color: white;
+}
+
+.section#mid{
+  background-color: rgb(32, 32, 32);
+  color: white;
+}
+
+.section#bot{
+  background-image: linear-gradient(rgb(32, 32, 32), rgb(219, 219, 219));
+  color: white;
+  padding-top:1%;
+  padding-bottom:10%;
+}
+.title{
+  margin:0px;
+  padding:0px;
+}
+.sectionImage{
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+.sectionText{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  padding: 3%;
+}
+
+#Carousel_Wrapper{
+  position: relative;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+#Carousel_BG{
+  position: relative;
+  padding: 20%;
+  z-index: -1;
+  max-height: 700px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://m.media-amazon.com/images/M/MV5BMjI1MDQ2MDg5Ml5BMl5BanBnXkFtZTgwMjc2NjM5ODE@._V1_SY1000_SX675_AL_.jpg");
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+  transform: scale(1.5);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.card_wrapper{
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  background: transparent;
+  color: white;
+
+  // border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // z-index: 0;
+  width: 80%;
+  text-align: left;
+  
+}
+.card_picture{
+  // border: 1px solid white;
+  position: relative;
+  margin: auto;
+  max-width: 25%;
+  -webkit-mask-image:-webkit-gradient(linear, left center, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.card_wrapper{
+  // border: 1px solid white;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+}
+.card_text{
+  // border: 1px solid white;
+  position: relative;
+  padding: 0px 15% 0px 3%;
+}
+
+.prevButton, .nextButton{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  font-size: 50px;
+  background-color: transparent;
+  border: none;
+  color: #e6e6e6;
+  font-family: 'Open Sans Condensed', sans-serif;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    color: #cdcdcd;
+  }
+}
+
+.prevButton{
+  bottom: 50%;
+  left: 1%;
+}
+.nextButton{
+  bottom: 50%;
+  left: 93%;
+}
+
+.cardLinks{
+  padding-top: 10%;
+}
+.WatchTrailer{
+  color: white;
+  text-decoration: none;
+  padding: 2.0% 2.5%;
+  margin: 2%;
+  font-weight: bold;
+  border: solid 1px white;
+  border-radius: 5px;
+  background: transparent;
+}
+.BuyNow{
+  color: white;
+  text-decoration: none;
+  padding: 2.5% 14%;
+  margin: 2%;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-image: url("https://i.gyazo.com/ecc08cbf529b43fe8405e4a3446bdba6.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (max-width: 1266px) {
+  .section{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    /* optional
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start; */
+  }
+
+  .sectionImage#top{
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+
+  .sectionText#top{
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+  }
+
+  .sectionImage#bot{
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+    order: 2;
+  }
+
+  .sectionText#bot{
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+  }
+  .card_text{
+    // border: 1px solid white;
+    position: relative;
+    font-size: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 768px){
+  .section{
+    padding: 10% 5%;
+  }
+  .card_text{
+    // border: 1px solid white;
+    position: relative;
+    font-size: 10px;
+  }
+}
