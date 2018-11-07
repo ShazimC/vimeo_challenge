@@ -2,7 +2,8 @@ Instructions on how to run:
 1. Download Node.js from https://nodejs.org/en/ if not already installed in your PC.
 2. Download this repository to your PC.
 3. Go to your command prompt/terminal and change your directory to the directory of this downloaded repository. Use the "cd" command followed by the path of the repository folder.
-4. After changing directory, type "npm start" to run the react project and your browser should open up with the webpage.
+5. After changing directory, type "npm install react" to install react.
+4. then type "npm start" to run the react project and your browser should open up with the webpage.
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
